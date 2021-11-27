@@ -9,7 +9,7 @@
 
             @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 
-            /* 
+            /*
             Vamos a contradecir a Bootstrap, partiendo con un par de variables
             1) La que define la familia tipográfica que se aplica por defecto
             2) La que define un color que podríamos reutilizar
@@ -17,7 +17,7 @@
 
             :root {
                 --bs-body-font-family: "Roboto", sans-serif;
-                --bs-primary: #e65100 !important;
+                --bs-primary: #50A545 !important;
             }
 
             a {
@@ -102,20 +102,20 @@
         <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
         <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
 
-        <title>REPASO DANDO UN PASO</title>
+        <title>Hipopótamo Pigmeo</title>
     </head>
     <body>
         <!--ESTE ES EL ENCABEZADO-->
         <header class="container">
             <div class="row">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h2 class="text-center fst-italic mt-5"><span class="px-2 py-1">Nombre científico</span></h2>
+                    <h2 class="text-center fst-italic mt-5"><span class="px-2 py-1">Choeropsis Liberiensis</span></h2>
 
-                    <h1 class="text-center py-3">Nombre común</h1>
+                    <h1 class="text-center py-3">Hipopótamo Pigmeo</h1>
 
-                    <p class="lead">En este párrafo, de clase lead, capturamos la atención y nos comprometemos con algo que debe mostrarse antes de cerrar el encabezado (el elemento header). Es recomendable que sea como un tweet (un máximo de 280 caracteres; como referencia, en este párrafo tenemos 280 caracteres).</p>
+                    <p class="lead">Es un mamífero originario de los bosques y marismas de África Occidental. Su nombre proviene del griego hippos (caballo) y potamos (río), es decir, "Caballo de Río". Junto con el hipopótamo común o anfibio, es una de las dos únicas especies vivientes de la familia de los hipopotámidos.</p>
 
-                    <p>Pero no podemos dejar que todo se acabe en el encabezado. Corresponde ofrecer, en este párrafo desclasado, razones para bajar por distintas secciones (section), llegando al pie de página (footer). Nuevamente, que sea como un tweet (aquí también pueden contar sólo 280 caracteres).</p>
+                    <p>En 2015, fue declarado como especie en peligro de extinción por la Unión Internacional para la Conservación de la Naturaleza (UICN). Actualmente, solo quedan entre 2.000 y 2.500 ejemplares adultos en su hábitat natural.</p>
 
                     <div class="row">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 my-3 mx-auto">
@@ -135,7 +135,7 @@
                                     font-size: 35px;
                                 }
                                 .no {
-                                    fill: #999999;
+                                    fill: #C7C096;
                                 }
                                 .si {
                                     fill: var(--bs-primary);
@@ -150,11 +150,11 @@
                                 <text transform="matrix(1 0 0 1 180 245)" class="blanco">EW</text>
                             </g>
                             <g id="cr">
-                                <circle class="si" cx="342.9" cy="228.7" r="46.4" />
+                                <circle class="no" cx="342.9" cy="228.7" r="46.4" />
                                 <text transform="matrix(1 0 0 1 313 245)" class="blanco">CR</text>
                             </g>
                             <g id="en">
-                                <circle class="no" cx="473.6" cy="228.7" r="46.4" />
+                                <circle class="si" cx="473.6" cy="228.7" r="46.4" />
                                 <text transform="matrix(1 0 0 1 444 245)" class="blanco">EN</text>
                             </g>
                             <g id="vu">
@@ -185,14 +185,37 @@
                     </div>
 
                     <!--Muestra el chucao chico o el grando, pero carga ambos-->
-                    <object data="cositas/chucao-chico.svg" type="image/svg+xml" class="d-md-none"></object>
-                    <object data="cositas/chucao-grande.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    <object data="cositas/hipo-chico.svg" type="image/svg+xml" class="d-md-none"></object>
+                    <object data="cositas/hipo-grande.svg" type="image/svg+xml" class="d-none d-md-block"></object>
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
                 </div>
             </div>
         </header>
         <!--ESTE ES EL CONTENIDO PRINCIPAL, ESTÁ DIVIVIDO EN VARIAS SECCIONES-->
         <main class="pb-5">
+          <!--SECCIÓN COMPARATIVA-->
+          <section class="container" id="seccion_comparativa">
+              <div class="row">
+                  <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                      <h3 class="text-center mt-5 mb-3">Pequeños, pero pesados</h3>
+                      <object data="cositas/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
+                      <p>Puede llegar a pesar entre <em>160 a 270 kg;</em> un tercio del Hipopótamo Común. La hembra suele ser más grande y pesada que el macho.</p>
+                  </div>
+              </div>
+          </section>
+          <!--SECCIÓN YUXTAPUESTA-->
+          <section class="container" id="seccion_yuxtapuesta">
+              <div class="row">
+                  <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                      <h3 class="text-center mt-5 mb-3">Su anatomía</h3>
+                      <div id="yuxtaposicion" class="my-3">
+                          <img src="cositas/hipo-antes.jpg" alt="describa…" />
+                          <img src="cositas/hipo-despues.jpg" alt="describa…" />
+                      </div>
+                      <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                  </div>
+              </div>
+          </section>
             <!--SECCIÓN ANCHA-->
             <section id="seccion_ancha">
                 <div class="container-fluid g-0">
@@ -238,29 +261,6 @@
                     </div>
                 </div>
             </section>
-            <!--SECCIÓN COMPARATIVA-->
-            <section class="container" id="seccion_comparativa">
-                <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h3 class="text-center mt-5 mb-3">Sección comparativa</h3>
-                        <object data="cositas/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
-                    </div>
-                </div>
-            </section>
-            <!--SECCIÓN YUXTAPUESTA-->
-            <section class="container" id="seccion_yuxtapuesta">
-                <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h3 class="text-center mt-5 mb-3">Sección yuxtapuesta</h3>
-                        <div id="yuxtaposicion" class="my-3">
-                            <img src="cositas/beirut-antes.jpg" alt="describa…" />
-                            <img src="cositas/beirut-despues.jpg" alt="describa…" />
-                        </div>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
-                    </div>
-                </div>
-            </section>
             <!--SECCIÓN MOVILIZADA-->
             <section class="container" id="seccion_movilizada">
                 <div class="row">
@@ -268,7 +268,7 @@
                         <h3 class="text-center mt-5 mb-3">Sección movilizada</h3>
 
                         <!--INTERACCIÓN-->
-                        
+
                         <h4 class="text-center mt-5 mb-3">Interacción</h4>
                         <div class="row">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
@@ -296,7 +296,7 @@
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
                         <!--ANIMACIÓN CON SVG-->
-                        
+
                         <h4 class="text-center mt-5 mb-3">Animación con SVG</h4>
                         <object class="mx-5" data="cositas/el-movimiento.svg" type="image/svg+xml"></object>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
@@ -307,7 +307,7 @@
                         <object class="mx-5" data="cositas/el-grito.svg" type="image/svg+xml"></object>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
-                        <!--ANIMACIÓN CON GIF y CSS-->                        
+                        <!--ANIMACIÓN CON GIF y CSS-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF y CSS</h4>
                         <div class="mb-4 w-100 bg-light overflow-hidden">
@@ -315,7 +315,7 @@
                         </div>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
-                        <!--ANIMACIÓN CON GIF-->                        
+                        <!--ANIMACIÓN CON GIF-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF</h4>
                         <div class="text-center pb-4">
@@ -363,7 +363,7 @@
                 controlShadow: true,
                 addCircle: true,
                 addCircleBlur: true,
-                showLabels: true,
+                showLabels: false,
                 labelOptions: {
                     before: "Cara",
                     after: "Sello",
